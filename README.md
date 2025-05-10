@@ -40,13 +40,14 @@ Sequential([
     LSTM(64),
     Dropout(0.5),
     Dense(1, activation='sigmoid')
-])```
+])
+```
 
 Embedding Layer: Transforms words into dense vectors.
 
 LSTM Layer: Captures sequence dependencies.
 
-Dropout: Reduces overfitting.
+Dropout Layer: Reduces overfitting.
 
 Output Layer: Binary classification using sigmoid.
 
