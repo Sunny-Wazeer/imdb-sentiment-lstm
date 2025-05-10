@@ -27,7 +27,7 @@ This project applies a Long Short-Term Memory (LSTM) neural network to classify 
 
 ## Dataset
 
-- Source: [Stanford AI - IMDB Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
+-[IMDB Dataset of 50K Movie Reviews on Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - Format: CSV file with two columns:
   - review: text of the review
   - sentiment: positive or negative
@@ -42,7 +42,6 @@ Sequential([
     Dense(1, activation='sigmoid')
 ])
 ```
-
 Embedding Layer: Transforms words into dense vectors.
 
 LSTM Layer: Captures sequence dependencies.
@@ -51,7 +50,7 @@ Dropout Layer: Reduces overfitting.
 
 Output Layer: Binary classification using sigmoid.
 
-** How to Run**
+## How to Run
 
 1. Open the notebook in Google Colab.
 2. Upload the IMDB Dataset.csv file.
@@ -62,26 +61,25 @@ Output Layer: Binary classification using sigmoid.
  - Predict sentiment on new reviews
 
 ## Example Prediction
-
 review = ["This movie was a huge disappointment."]
-# Clean, tokenize, pad, and predict
-
-IMDB Sentiment Analysis with LSTM
-
+Clean, tokenize, pad, and predict
 prediction = model.predict(padded_input)
 print("Prediction: Positive" if prediction > 0.5 else "Prediction: Negative")
 
-Results
+
+
+## Results
 
 Validation Accuracy: ~88%
 Handles HTML tags and punctuation
 Supports real-time sentiment prediction
 
-Output Files
+## Output Files
 
 model_lstm2.h5
 model_lstm2.keras
 
-Author
+## Author
 Sunny Wazeer
 GitHub: github.com/SunnyWazeer
+
