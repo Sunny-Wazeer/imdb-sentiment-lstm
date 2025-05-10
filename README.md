@@ -80,6 +80,6 @@ model_lstm2.h5
 model_lstm2.keras
 
 ## Author
-Sunny Wazeer
-GitHub: github.com/SunnyWazeer
+**Author:** [Sunny Wazeer](https://github.com/Sunny-Wazeer)
+
 
