@@ -40,7 +40,8 @@ Sequential([
     LSTM(64),
     Dropout(0.5),
     Dense(1, activation='sigmoid')
-])
+])```
+
 Embedding Layer: Transforms words into dense vectors.
 
 LSTM Layer: Captures sequence dependencies.
@@ -59,7 +60,7 @@ Output Layer: Binary classification using sigmoid.
  - Evaluate accuracy
  - Predict sentiment on new reviews
 
-Example Prediction
+## Example Prediction
 
 review = ["This movie was a huge disappointment."]
 # Clean, tokenize, pad, and predict
